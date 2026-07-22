@@ -51,4 +51,4 @@ Voir `backend/README.md` pour le détail des routes de l'API.
 
 ## Auteur
 
-Projet réalisé par [Ton Nom] — Titre Professionnel Développeur Web et Web Mobile, 2026.
+Projet réalisé par Herumoru — Titre Professionnel Développeur Web et Web Mobile, 2026.
