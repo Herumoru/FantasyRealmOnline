@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Laisse passer les fichiers et dossiers existants tels quels
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirige tout le reste vers le contrôleur frontal
+RewriteRule ^ index.php [L]

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — FantasyRealm Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <div class="brand-mark">P</div>
+                <div class="brand-text">
+                    <h1>PixelVerse <span>Studios</span></h1>
+                    <small>FantasyRealm Online</small>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Accueil</a>
+                <a href="personnages.html">Personnages</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="espace.html">Mon Espace</a>
+                <a href="backoffice.html" class="staff-only">Back-office</a>
+            </nav>
+            <div class="nav-user" data-nav-user></div>
+            <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2>Contactez-nous</h2>
+                <p>Une question, un problème avec votre personnage ? Écrivez à l'équipe PixelVerse Studios.</p>
+            </div>
+
+            <form id="contact-form" class="glass-panel form-panel wide" novalidate>
+                <div id="contact-message" class="form-message"></div>
+                <p id="contact-session-note" style="display:none; font-size:0.8rem; color:var(--mana-cyan); margin-top:-0.5rem; margin-bottom:1.3rem;">
+                    Vous êtes connecté : votre e-mail et votre pseudo ont été pré-remplis automatiquement.
+                </p>
+
+                <div class="field">
+                    <label for="contact-email">Adresse e-mail</label>
+                    <input type="email" id="contact-email" required>
+                </div>
+
+                <div class="field" id="field-contact-pseudo">
+                    <label for="contact-pseudo">Pseudo</label>
+                    <input type="text" id="contact-pseudo" required>
+                    <span class="field-error"></span>
+                </div>
+
+                <div class="field">
+                    <label for="contact-detail">Détail de votre demande</label>
+                    <textarea id="contact-detail" rows="5" required placeholder="Décrivez votre demande le plus précisément possible..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;">Envoyer le message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="copyright">© 2026 PixelVerse Studios — Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="cgv.html">Conditions générales de vente</a>
+                <a href="#" id="reset-data-link" title="Effacer les comptes, personnages et avis de test stockés dans ce navigateur">Réinitialiser les données de démo</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

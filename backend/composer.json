@@ -1,0 +1,12 @@
+{
+    "name": "pixelverse-studios/fantasyrealm-backend",
+    "description": "API back-end du systeme de gestion de personnages FantasyRealm Online (ECF TP Developpeur Web et Web Mobile)",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.1",
+        "ext-pdo": "*",
+        "ext-mongodb": "*",
+        "mongodb/mongodb": "^1.17"
+    }
+}

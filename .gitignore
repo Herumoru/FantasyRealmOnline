@@ -1,0 +1,12 @@
+# Back-end PHP
+backend/vendor/
+backend/.env
+backend/composer.lock
+
+# Système
+.DS_Store
+Thumbs.db
+*.log
+
+# Fichiers de travail (aperçus générés, non destinés au dépôt)
+**/preview_*.png

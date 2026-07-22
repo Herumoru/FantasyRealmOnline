@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion — FantasyRealm Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="connexion">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <div class="brand-mark">P</div>
+                <div class="brand-text">
+                    <h1>PixelVerse <span>Studios</span></h1>
+                    <small>FantasyRealm Online</small>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Accueil</a>
+                <a href="personnages.html">Personnages</a>
+                <a href="contact.html">Contact</a>
+                <a href="espace.html">Mon Espace</a>
+                <a href="backoffice.html" class="staff-only">Back-office</a>
+            </nav>
+            <div class="nav-user" data-nav-user></div>
+            <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2>Connexion</h2>
+                <p>Accédez à votre espace pour retrouver vos personnages</p>
+            </div>
+
+            <form id="connexion-form" class="glass-panel form-panel" novalidate>
+                <div id="connexion-message" class="form-message"></div>
+
+                <div class="field" id="field-login-email">
+                    <label for="login-email">Adresse e-mail</label>
+                    <input type="email" id="login-email" name="login-email" required autocomplete="email">
+                    <span class="field-error"></span>
+                </div>
+
+                <div class="field" id="field-login-password">
+                    <label for="login-password">Mot de passe</label>
+                    <input type="password" id="login-password" name="login-password" required autocomplete="current-password">
+                    <span class="field-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;">Se connecter</button>
+
+                <p class="form-foot">
+                    <button type="button" id="forgot-link" class="link-inline">Mot de passe oublié ?</button>
+                </p>
+                <p class="form-foot">Pas encore de compte ? <a href="inscription.html">Créer un compte</a></p>
+            </form>
+
+            <div id="forgot-panel" class="glass-panel form-panel mt-2" style="display:none;">
+                <h3 style="margin-bottom:1rem;">Réinitialiser mon mot de passe</h3>
+                <div id="forgot-message" class="form-message"></div>
+                <form id="forgot-form" novalidate>
+                    <div class="field">
+                        <label for="forgot-email">Adresse e-mail</label>
+                        <input type="email" id="forgot-email" required>
+                    </div>
+                    <div class="field">
+                        <label for="forgot-pseudo">Pseudo</label>
+                        <input type="text" id="forgot-pseudo" required>
+                    </div>
+                    <button type="submit" class="btn btn-outline" style="width:100%;">Recevoir un nouveau mot de passe</button>
+                </form>
+            </div>
+
+            <p class="text-center" style="font-size:0.75rem; color:var(--stone-gray); margin-top:2rem;">
+                Compte de démonstration : draak.test@fantasyrealm.io / Test1234!
+            </p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="copyright">© 2026 PixelVerse Studios — Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="cgv.html">Conditions générales de vente</a>
+                <a href="#" id="reset-data-link" title="Effacer les comptes, personnages et avis de test stockés dans ce navigateur">Réinitialiser les données de démo</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

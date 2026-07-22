@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un personnage — FantasyRealm Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="creation">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <div class="brand-mark">P</div>
+                <div class="brand-text">
+                    <h1>PixelVerse <span>Studios</span></h1>
+                    <small>FantasyRealm Online</small>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Accueil</a>
+                <a href="personnages.html">Personnages</a>
+                <a href="contact.html">Contact</a>
+                <a href="espace.html">Mon Espace</a>
+                <a href="backoffice.html" class="staff-only">Back-office</a>
+            </nav>
+            <div class="nav-user" data-nav-user></div>
+            <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <p style="margin-bottom:1.5rem;"><a href="espace.html" style="color:var(--mana-cyan); font-size:0.85rem;">&larr; Retour à mon espace</a></p>
+
+            <div class="section-head" style="text-align:left; margin-left:0;">
+                <h2>Créer un nouveau personnage</h2>
+                <p>Définissez son identité et ses traits. Il sera ensuite soumis à validation avant partage.</p>
+            </div>
+
+            <div id="creation-message" class="form-message" style="max-width:none;"></div>
+
+            <div class="builder-layout">
+                <div class="preview-stage" id="preview-stage">
+                    <div class="preview-glow"></div>
+                    <div class="preview-avatar">
+                        <div class="preview-head"></div>
+                        <div class="preview-body"></div>
+                        <div class="preview-label"></div>
+                    </div>
+                </div>
+
+                <form id="creation-form" class="glass-panel" style="padding:1.75rem;">
+                    <div class="field" id="field-nom">
+                        <label for="nom">Nom du personnage</label>
+                        <input type="text" id="nom" required placeholder="Ex : Aeryn Ventfroid">
+                        <span class="field-error"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="genre">Genre</label>
+                        <select id="genre">
+                            <option value="Homme">Homme</option>
+                            <option value="Femme">Femme</option>
+                            <option value="Non-binaire">Non-binaire</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="forme-visage">Forme du visage</label>
+                        <select id="forme-visage">
+                            <option>Ovale</option>
+                            <option>Ronde</option>
+                            <option>Carrée</option>
+                            <option>Anguleuse</option>
+                            <option>Allongée</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="forme-yeux">Forme des yeux</label>
+                        <select id="forme-yeux">
+                            <option>Amande</option>
+                            <option>Ronds</option>
+                            <option>Étirés</option>
+                            <option>Tombants</option>
+                            <option>Perçants</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="forme-nez">Forme du nez</label>
+                        <select id="forme-nez">
+                            <option>Fin</option>
+                            <option>Droit</option>
+                            <option>Retroussé</option>
+                            <option>Large</option>
+                            <option>Aquilin</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="forme-bouche">Forme de la bouche</label>
+                        <select id="forme-bouche">
+                            <option>Souriante</option>
+                            <option>Neutre</option>
+                            <option>Sérieuse</option>
+                            <option>Boudeuse</option>
+                            <option>Mystérieuse</option>
+                        </select>
+                    </div>
+
+                    <div class="swatch-group">
+                        <label>Couleur de peau</label>
+                        <div class="swatch-grid" id="swatch-peau"></div>
+                    </div>
+                    <div class="swatch-group">
+                        <label>Couleur des cheveux</label>
+                        <div class="swatch-grid" id="swatch-cheveux"></div>
+                    </div>
+                    <div class="swatch-group">
+                        <label>Couleur des yeux</label>
+                        <div class="swatch-grid" id="swatch-yeux"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width:100%;">Soumettre mon personnage</button>
+                    <p class="form-foot">L'équipement (armes, armures, vêtements, accessoires) se personnalise après validation, depuis « Mon Espace ».</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="copyright">© 2026 PixelVerse Studios — Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="cgv.html">Conditions générales de vente</a>
+                <a href="#" id="reset-data-link" title="Effacer les comptes, personnages et avis de test stockés dans ce navigateur">Réinitialiser les données de démo</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

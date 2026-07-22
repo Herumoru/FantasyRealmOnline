@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer mon personnage — FantasyRealm Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="edition">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <div class="brand-mark">P</div>
+                <div class="brand-text">
+                    <h1>PixelVerse <span>Studios</span></h1>
+                    <small>FantasyRealm Online</small>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Accueil</a>
+                <a href="personnages.html">Personnages</a>
+                <a href="contact.html">Contact</a>
+                <a href="espace.html">Mon Espace</a>
+                <a href="backoffice.html" class="staff-only">Back-office</a>
+            </nav>
+            <div class="nav-user" data-nav-user></div>
+            <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <p style="margin-bottom:1.5rem;"><a href="espace.html" style="color:var(--mana-cyan); font-size:0.85rem;">&larr; Retour à mon espace</a></p>
+            <div id="edition-root"></div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="copyright">© 2026 PixelVerse Studios — Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="cgv.html">Conditions générales de vente</a>
+                <a href="#" id="reset-data-link" title="Effacer les comptes, personnages et avis de test stockés dans ce navigateur">Réinitialiser les données de démo</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="app-modal">
+        <div class="modal-box glass-panel">
+            <h3 class="modal-title"></h3>
+            <div class="modal-body"></div>
+            <div class="modal-actions">
+                <button type="button" class="btn btn-ghost" onclick="closeModal()">Annuler</button>
+                <button type="button" class="btn btn-primary modal-confirm"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
