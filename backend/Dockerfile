@@ -6,9 +6,12 @@ RUN apt-get update && apt-get install -y \
     $PHPIZE_DEPS \
     git \
     unzip \
+    ca-certificates \
+    openssl \
     libssl-dev \
     libcurl4-openssl-dev \
     pkg-config \
+    && update-ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 # Extension MySQL (PDO) - deja disponible via docker-php-ext-install
