@@ -1,8 +1,9 @@
 # Image PHP + Apache avec les extensions necessaires (pdo_mysql + mongodb)
 FROM php:8.1-apache
 
-# Extensions systeme necessaires a la compilation de l'extension mongodb
+# Outils de compilation + dependances systeme necessaires a PECL (extension mongodb)
 RUN apt-get update && apt-get install -y \
+    $PHPIZE_DEPS \
     git \
     unzip \
     libssl-dev \
